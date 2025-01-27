@@ -1,0 +1,121 @@
+/* Ensure the app container takes up the full height and width */
+.App {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Take full viewport height */
+  width: 100%; /* Take full width of the screen */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('/background.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the background image covers the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+/* Header styling */
+.App-header {
+  background-color: #dcacd6;
+  color: rgb(121, 37, 37);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: calc(10px + 2vmin);
+  width: 100%;
+  max-width: 800px; /* Optional: Limit the max width of the container */
+}
+
+/* Heading styling */
+h1 {
+  color: #3b22cc;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* Converter section */
+.converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #1968a9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input container styling */
+.input-container {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the input field */
+.input-container input {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 150px; /* Adjust input width */
+  text-align: center; /* Center the text inside input */
+}
+
+/* Styling for select dropdowns */
+.input-container select {
+  padding: 10px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 5px; /* Add margin for spacing */
+}
+
+/* Output container for converted result */
+.output-container {
+  margin: 20px 0;
+}
+
+.result {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for the button */
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 15px;
+  }
+
+  .converter {
+    width: 90%; /* Allow the converter to use more screen width on smaller screens */
+    padding: 15px;
+  }
+
+  .input-container input,
+  .input-container select {
+    font-size: 1em;
+  }
+}
